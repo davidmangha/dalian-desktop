@@ -1,0 +1,17 @@
+{
+  "name": "daliad",
+  "version": "1.0.0",
+  "description": "Daliad - application de bureau",
+  "main": "main.js",
+  "author": "Dav Intertenement",
+  "scripts": { "start": "electron ." },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "app.daliad.desktop",
+    "productName": "Daliad",
+    "files": ["main.js"],
+    "mac": { "category": "public.app-category.social-networking", "identity": null, "target": ["dmg"], "icon": "build/icon.png" },
+    "win": { "target": ["nsis"], "icon": "build/icon.png" },
+    "dmg": { "title": "Daliad" }
+  }
+}
